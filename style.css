@@ -198,3 +198,154 @@ nav .icon-burger .line {
         transform: translateY(0);
     }
 }
+
+/* footer css starts here */
+.footer {
+  max-width: 1520px;
+  width: 100%;
+  background: #9c8a9866;
+  border-radius: 6px;
+  font-weight: lighter;
+}
+
+.footer .footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 3.5rem;
+  padding: 60px;
+}
+
+.footer-row .footer-col h4 {
+  color: #00000085;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.footer-col .links {
+  margin-top: 20px;
+}
+
+.footer-col .links li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.footer-col .links li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.footer-col .links li a:hover {
+  color: #655a61;
+}
+
+.footer-col p {
+  margin: 20px 0;
+  color: #000000c4;
+  max-width: 300px;
+}
+
+.footer-col form {
+  display: flex;
+  gap: 5px;
+}
+
+.footer-col input {
+  height: 40px;
+  border-radius: 20px;
+  background: none;
+  width: 100%;
+  outline: none;
+  border: solid 1px #0000003b;
+  caret-color: #000;
+  color: #000;
+  padding-left: 10px;
+}
+
+.footer-col input::placeholder {
+  color: #000000;
+}
+
+ .footer-col form button {
+  background: #ffffff8b;
+  outline: none;
+  border: solid 1px #0000003b;
+  padding: 10px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+.footer-col form button:hover {
+  background: #dbd5db5f;
+}
+
+.footer-col .icons {
+  display: flex;
+  margin-top: 30px;
+  gap: 30px;
+  cursor: pointer;
+}
+
+.footer-col .icons i {
+  color: #ad5896;
+}
+
+.footer-col .icons i:hover {
+  color: #5c1348;
+}
+
+.safe-payment-details {
+    text-align: center;
+    padding: 4rem 0rem;
+}
+
+.payment-line-icons {
+    font-size: 30px;
+    color: #000;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    transform: none;
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .footer .footer-row {
+    padding: 20px;
+    gap: 1rem;
+  }
+
+  .footer-col form {
+    display: block;
+  }
+
+  .footer-col form :where(input, button) {
+    width: 100%;
+  }
+
+  .footer-col form button {
+    margin: 10px 0 0 0;
+  }
+}
+
+.additional-footer-details {
+  text-align: center;
+  padding-bottom: 4rem;
+  font-size: 0.8rem;
+}
+
+.additional-footer-details-link {
+  color: #000;
+  text-decoration: none;
+}
+
+.additional-footer-details-link:hover {
+  text-decoration: underline;
+}
