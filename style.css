@@ -199,6 +199,7 @@ nav .icon-burger .line {
     }
 }
 
+
 /* shop-our-retinol-bestsellers cards css starts here */
         /* Container Styles */
         .bestsellers-container, .bestsellers-container-heading , .carousel-heading {
@@ -663,6 +664,124 @@ nav .icon-burger .line {
   }
 }
 
+/* hero 2 css starts here */
+.hero-2 {
+    position: relative;
+    background: url('images/pexels-janakukebal-6496459.jpg') center/cover no-repeat;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem 1rem;
+    filter: brightness(1.01); /* Increases brightness by 50% */
+}
+
+.hero-2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(167, 102, 167, 0.116);
+    z-index: 1; 
+}
+
+.hero-content-2 {
+    color: #130f12;
+    z-index: 2; 
+}
+
+.hero-title-2 {
+    margin-bottom: 20px;
+    animation: fadeInUp 1s ease-in-out;
+    font-size: 1.8rem;
+}
+
+.hero-subtitle-2 {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    animation: fadeInUp 1s ease-in-out 0.5s;
+}
+
+.hero-button-2 {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    text-decoration: none;
+    color: #130f12;
+    font-weight: lighter;
+    background-color: #fff;
+    border-radius: 5rem;
+    transition: background-color 0.3s ease-in-out;
+    position: relative;
+    z-index: 3;
+    transition: 0.4s linear;
+}
+
+.hero-button-2:hover {
+    background-color: rgba(180, 169, 179, 0.266);
+    transform: translateY(5px);
+    color: #fff;
+}
+
+
+/* instagram grid css starts here */
+.instagram-grid-container {
+    padding: 5rem 0rem;
+}
+
+.instagram-grid-heading {
+    text-align: center;
+    font-size: 1.8rem;
+    color: rgba(43, 36, 43, 0.501);
+    font-weight: lighter;
+    padding-bottom: 3rem;
+}
+
+.image-grid-1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+/* Second row with 3 columns */
+.image-grid-1 .row-2 {
+  display: grid;
+  grid-column: 1 / -1;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.image-container-1 {
+  position: relative;
+  padding-bottom: 100%;
+  height: 0;
+  overflow: hidden;
+}
+
+.image-container-1 blockquote {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .image-grid-1 {
+    grid-template-columns: 1fr;
+  }
+
+  .image-grid-1 .row-2 {
+    grid-template-columns: 1fr;
+  }
+}
+
 
 /* footer css starts here */
 .footer {
@@ -814,3 +933,442 @@ nav .icon-burger .line {
 .additional-footer-details-link:hover {
   text-decoration: underline;
 }
+
+/* Responsive Design (a COMBINATION of html elements) */
+        
+        /* Large Desktops */
+        @media (min-width: 1400px) {
+          
+        }
+
+        /* Standard Desktops */
+        @media (max-width: 1399px) and (min-width: 1200px) {
+          
+        }
+
+        /* Small Desktops & Large Tablets */
+        @media (max-width: 1199px) and (min-width: 992px) {
+           .image-grid-1 {
+            margin: 0 3rem; 
+           }
+        }
+
+        /* Tablets */
+        @media (max-width: 991px) and (min-width: 768px) {
+           .image-grid-1 {
+              margin: 0 3rem;
+            } 
+        }
+
+        /* Large Phones */
+        @media (max-width: 767px) and (min-width: 480px) {
+            
+            .hero {
+              border-radius: 10px; 
+              height: 300px;
+              margin-top: 8rem;
+            }
+
+            .hero-title, .hero-title-2 {
+               font-size: 1.2rem;
+              /* animation: none; */
+            }
+
+            .hero-subtitle {
+               font-size: 0.9rem;
+               margin-bottom: 0.8rem;
+              /* animation: none; */
+            }
+
+            .hero-button, .hero-button-2 {
+               padding: 7px 10px;
+               font-size: 12px;
+            }
+
+            .hero-2 {
+              border-radius: 10px;
+              max-height: 300px;
+            }
+
+            .carousel-background {
+              border-radius: 10px;
+            }
+
+            .image-grid-1 {
+              margin: 0 1rem;
+            }
+
+            .bestsellers-container-heading, .carousel-heading {
+              text-align: center;
+              font-size: 1rem;
+            }
+
+            .hero-button:hover, .hero-button-2:hover {
+              background-color: #fff;
+              transform: none;
+              color: #655a61;
+            }
+
+            .product-card:hover .product-image {
+              transform: none;
+            }
+
+            .bestsellers-container {
+              padding-left: 3rem;
+              padding-right: 9rem;
+            }
+
+            .bestsellers-container, .bestsellers-container-heading , .carousel-heading {
+            width: 100%;
+            padding: 1rem;
+            max-width: 1400px;
+            margin: 0 auto;
+           }
+
+        .bestsellers-container-heading {
+           margin-bottom: 1rem;
+           font-size: 1.1rem;
+        }
+
+        /* Product Card */
+        .product-card {
+            width: 100%;
+            position: relative;
+            box-shadow: 0 2px 7px #dfdfdf;
+            background: #fafafa;
+            cursor: pointer;
+            overflow: hidden;
+            transition: 0.3s;
+            border-radius: 8px;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        /* Badges */
+        .badge {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: #ddd4d945;
+            backdrop-filter: blur(10px);
+            color: #130f12;
+            padding: 5px 10px;
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            border-radius: 5px;
+            box-shadow: 0 3px 10px rgba(0,0,0,.2);
+            z-index: 10;
+        }
+
+        .badge-2 {
+            position: absolute;
+            top: 10px;
+            right: 12px;
+            font-size: 20px;
+            color: #0000007a;
+            z-index: 10;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .badge-2:hover {
+            color: #4f4849;
+            transform: scale(1.2);
+        }
+
+        /* Product Image */
+        .product-image-container {
+            height: 200px;
+            overflow: hidden;
+            background: #fff;
+        }
+
+        .product-image {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            transition: transform .5s;
+            padding: 10px;
+        }
+
+        .product-card:hover .product-image {
+            transform: scale(1.05);
+        }
+
+        /* Product Details */
+        .product-details {
+            padding: 20px;
+        }
+
+        .product-category {
+            display: block;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #999;
+            margin-bottom: 10px;
+        }
+
+        .product-details h4 {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 1.4;
+            margin-bottom: 15px;
+            color: #363636;
+            min-height: 40px;
+        }
+
+        /* Features */
+        .feats {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-bottom: 15px;
+        }
+
+        .feat {
+            font-size: 10px;
+            background: #F4F4F5;
+            color: #71717A;
+            padding: 3px 8px;
+            border-radius: 10px;
+            font-weight: 500;
+            line-height: 1.4;
+        }
+
+        /* Price and Button */
+        .bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .price {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .new {
+            font-size: 18px;
+            font-weight: 700;
+            color: #18181B;
+        }
+
+        .btn {
+            color: #201f1f;
+            background: #fff;
+            border: 1px solid #0000007a;
+            border-radius: 50px;
+            padding: 8px 15px;
+            font-size: 12px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: .3s;
+            box-shadow: 0 3px 10px rgba(0,0,0,.1);
+        }
+
+        .btn:hover {
+            background: #66646520;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,.15);
+        }
+
+        .grid-skincare-links {
+            color: #433b3b;
+            text-decoration: none;
+        }
+
+        /* Meta Information */
+        .meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid #F4F4F5;
+            padding-top: 12px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .rating {
+            display: flex;
+            align-items: center;
+            gap: 2px;
+            flex-wrap: wrap;
+        }
+
+        .rcount {
+            margin-left: 6px;
+            font-size: 11px;
+            color: #71717A;
+            white-space: nowrap;
+        }
+
+        .stock {
+            font-size: 11px;
+            font-weight: 600;
+            color: #22C55E;
+            white-space: nowrap;
+        }
+
+           .additional-footer-details {
+              font-size: 0.8rem;
+              padding: 0rem 3rem;
+              padding-bottom: 3rem;
+            }
+
+        }
+
+        /* Small Phones */
+        @media (max-width: 479px) {
+            .hero {
+              border-radius: 10px; 
+              height: 300px;
+
+              margin-top: 8rem;
+              margin-right: 0.5rem;
+              margin-left: 0.5rem;
+            }
+            
+            .hero-title, .hero-title-2 {
+                font-size: 1.1rem;
+            }
+            
+            .hero-title {
+              margin-top: -2rem;
+            }
+
+            .hero-title {
+              margin-bottom: 0.2rem;
+            }
+
+            .hero-subtitle {
+                font-size: 0.8rem;
+
+            }
+            .hero-2 {
+              margin-bottom: 0.1rem;
+
+              margin-right: 0.5rem;
+              margin-left: 0.5rem;
+            }
+            .hero-button, .hero-button-2 {
+               padding: 7px 10px;
+               font-size: 12px;
+            }
+
+            .hero-2 {
+              border-radius: 10px;
+              max-height: 300px;
+            }
+
+            .carousel-background {
+              border-radius: 10px;
+            }
+
+            .image-grid-1 {
+              margin: 0 1rem;
+            }
+
+             .instagram-grid-heading {
+              font-size: 1.2rem;
+              padding-bottom: 0.5rem;
+            }
+
+            .product-card:hover {
+              transform: none;
+            }
+            .badge-2:hover {
+              transform: none;
+            }
+            .btn:hover {
+              transform: none;
+            }
+
+            .bestsellers-container-heading, .carousel-heading {
+              text-align: center;
+              font-size: 1rem;
+            }
+
+            .hero-button:hover, .hero-button-2:hover {
+              background-color: #fff;
+              transform: none;
+              color: #655a61;
+            }
+
+            .product-card:hover .product-image {
+              transform: none;
+            }
+
+            .additional-footer-details {
+              font-size: 0.7rem;
+              padding: 0rem 3rem;
+              padding-bottom: 3rem;
+            }
+        }
+
+        /* Very Small Phones */
+        @media (max-width: 360px) {
+            .hero-title, .hero-title-2 {
+                font-size: 0.8rem;
+            }
+            .hero-subtitle {
+                font-size: 0.6rem;
+            }
+            
+            .hero-title {
+              margin-top: -2rem;
+            }
+
+            .hero-title {
+              margin-bottom: 0.2rem;
+            }
+
+            .hero-2 {
+              margin-bottom: 0.1rem;
+            }
+
+            .product-card:hover {
+              transform: none;
+            }
+            .badge-2:hover {
+              transform: none;
+            }
+            .btn:hover {
+              transform: none;
+            }
+            .image-grid-1 {
+              margin-left: 0.9rem;
+            }
+
+            .instagram-grid-heading {
+              font-size: 1.2rem;
+              padding-bottom: 0.5rem;
+            }
+
+            .footer {
+              font-size: 0.8rem;
+            }
+
+            .bestsellers-container-heading, .carousel-heading {
+              text-align: center;
+              font-size: 1rem;
+            }
+
+            .hero-button:hover, .hero-button-2:hover {
+              background-color: #fff;
+              transform: none;
+              color: #655a61;
+            }
+
+            .product-card:hover .product-image {
+              transform: none;
+            }
+        }
